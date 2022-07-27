@@ -2,13 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:gamey_flutter/pages/home/home_ui_store.dart';
 import 'package:gamey_flutter/pages/home/widgets/home_card.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 final homeStore = HomeUIStore();
+PageController? _pageController;
 
-class HomePage extends StatelessWidget {
+List<String> images = [
+  "https://images.wallpapersden.com/image/download/purple-sunrise-4k-vaporwave_bGplZmiUmZqaraWkpJRmbmdlrWZlbWU.jpg",
+  "https://wallpaperaccess.com/full/2637581.jpg",
+  "https://uhdwallpapers.org/uploads/converted/20/01/14/the-mandalorian-5k-1920x1080_477555-mm-90.jpg"
+];
 
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(viewportFraction: 0.87);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,25 +48,23 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 3,
-          itemBuilder: (context, index) {
-            return Observer(
-              builder: (_) => VisibilityDetector(
-                key: Key(index.toString()),
-                onVisibilityChanged: (VisibilityInfo info) {
-                  if (info.visibleFraction == 1) {
-                    homeStore.increment(index);
-                  }
-                },
-                child: HomeCard(index: index, color: index != homeStore.value ? Colors.black : Colors.transparent,)
-              ),
-            );
-          },
-        ),
+      body: PageView.builder(
+        controller: _pageController,
+        itemCount: 3,
+        pageSnapping: true,
+        itemBuilder: (context, index) {
+          return Observer(
+            builder: (_) => VisibilityDetector(
+              key: Key(index.toString()),
+              onVisibilityChanged: (VisibilityInfo info) {
+                if (info.visibleFraction == 1) {
+                  homeStore.increment(index);
+                }
+              },
+              child: HomeCard(index: index, color: index != homeStore.value ? Colors.black : Colors.transparent,)
+            ),
+          );
+        },
       ),
     );
   }

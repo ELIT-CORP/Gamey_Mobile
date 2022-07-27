@@ -29,10 +29,11 @@ class HomeCard extends StatelessWidget {
       elevation: 5,
       margin: const EdgeInsets.all(10),
       child: Stack(
+        fit: StackFit.expand,
         children: [
           Image.asset(
             'assets/images/png/section${index}_home.png',
-            fit: BoxFit.scaleDown,
+            fit: BoxFit.fitWidth,
             color: color,
             colorBlendMode: BlendMode.color,
           ),
