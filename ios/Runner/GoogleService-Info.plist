@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>244783056436-s5p9n45e5tk2kfb8bqjssdb2erjvbjg7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.244783056436-s5p9n45e5tk2kfb8bqjssdb2erjvbjg7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnEC29MYqVwDMLg0bIp01o361vyjyZqvk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>244783056436</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.gameyFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>gamey-d8c1f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gamey-d8c1f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:244783056436:ios:32fa7a809f2cb8f9f6ec61</string>
+	<key>DATABASE_URL</key>
+	<string>https://gamey-d8c1f-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "244783056436",
+    "firebase_url": "https://gamey-d8c1f-default-rtdb.firebaseio.com",
+    "project_id": "gamey-d8c1f",
+    "storage_bucket": "gamey-d8c1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244783056436:android:ce14a002e0483568f6ec61",
+        "android_client_info": {
+          "package_name": "com.example.gamey_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244783056436-i797il78ns4i0h7nf78dpki2p3jr5e9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ypU1hJoQKd3IXRSmBAu8vlra8sAnpHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244783056436-i797il78ns4i0h7nf78dpki2p3jr5e9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
