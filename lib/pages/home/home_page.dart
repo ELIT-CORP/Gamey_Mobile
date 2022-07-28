@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
               size: 30,
             ),
             onPressed: () {
-              Get.offNamed('/signin');
+              Get.toNamed('/signin');
             }),
         actions: [
           IconButton(

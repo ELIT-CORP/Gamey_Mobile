@@ -57,14 +57,15 @@ class HomeCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 36.0),
                   child: SizedBox(
-                      width: 200,
-                      child: Text(
-                        subtitles.elementAt(index),
-                        style: GoogleFonts.rubik(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 20,
-                            color: Colors.white),
-                      )),
+                    width: 200,
+                    child: Text(
+                      subtitles.elementAt(index),
+                      style: GoogleFonts.rubik(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20,
+                          color: Colors.white),
+                    ),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 50.0),
