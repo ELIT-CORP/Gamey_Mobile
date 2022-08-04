@@ -6,14 +6,14 @@ import 'package:flutter/gestures.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignInPage extends StatefulWidget {
-  SignInPage({Key? key}) : super(key: key);
+class SignIn extends StatefulWidget {
+  SignIn({Key? key}) : super(key: key);
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _SignInState extends State<SignIn> {
 
   final TextEditingController _controllerEmail = TextEditingController();
   final TextEditingController _controllerPassword = TextEditingController();

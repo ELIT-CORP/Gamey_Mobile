@@ -43,6 +43,9 @@ dependencies:
   firebase_auth: ^3.6.0
   get: ^4.6.5
   email_validator: ^2.1.16
+  flutter_inappwebview: ^5.4.3+7
+  permission_handler: ^10.0.0
+  url_launcher: ^6.1.5
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +75,12 @@ flutter:
   assets:
     - assets/images/
     - assets/images/png/
+    - assets/images/png/home/
+    - assets/images/png/items/
+    - assets/images/png/items/hardSkills/
+    - assets/images/png/items/softSkills/
+    - assets/images/png/characters/
+    - assets/images/png/characters/profile/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

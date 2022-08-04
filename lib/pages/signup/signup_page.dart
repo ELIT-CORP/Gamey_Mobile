@@ -7,14 +7,14 @@ import 'package:email_validator/email_validator.dart';
 
 import '../../auth/auth.dart';
 
-class SignUpPage extends StatefulWidget {
-  SignUpPage({Key? key}) : super(key: key);
+class SignUp extends StatefulWidget {
+  SignUp({Key? key}) : super(key: key);
 
   @override
-  State<SignUpPage> createState() => _SignUpPageState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _SignUpState extends State<SignUp> {
 
   final TextEditingController _controllerEmail = TextEditingController();
   final TextEditingController _controllerPassword = TextEditingController();

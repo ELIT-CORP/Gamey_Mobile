@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gamey_flutter/firebase_options.dart';
+import 'package:gamey_flutter/pages/game/character/selection/char_selection_page.dart';
 import 'package:gamey_flutter/pages/home/home_page.dart';
 import 'package:get/get.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       getPages: appRoutes,
-      home: HomePage(),
+      home: CharSelection(),
     );
   }
 }

@@ -8,12 +8,12 @@ import 'package:visibility_detector/visibility_detector.dart';
 final homeStore = HomeUIStore();
 PageController? _pageController;
 
-class HomePage extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Home> createState() => _HomeState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
